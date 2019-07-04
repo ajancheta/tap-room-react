@@ -5,33 +5,19 @@ import ArrowDown from '../assets/img/arrow-down.svg';
 import ArrowLeft from '../assets/img/arrow-left.svg';
 import ArrowRight from '../assets/img/arrow-right.svg';
 
+
 function Splash() {
   return (
     <div className="splash-background">
       <style jsx>{`
         .splash-background {
+          background-image: url(${Background});
           position: absolute;
           width: 100vw;
           height: 100vh;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-          background-image: url(${Background});
-        }
-
-        .splash-button-container {
-          // border: 1px solid red;
-          margin-top: 15%;
-          display: flex;
-          justify-content: center;
-        }
-
-        .splash-button {
-          // border: 1px solid blue;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 50%;
         }
 
         h3 {
@@ -41,14 +27,25 @@ function Splash() {
           color: #ECE5D6;
         }
 
+        .splash-button-container {
+          margin-top: 15%;
+          display: flex;
+          justify-content: center;
+        }
+
+        .splash-button {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 50%;
+        }
+
         .read-button-container {
-          // border: 1px solid red;
           display: flex;
           justify-content: center;
         }
 
         .read-button {
-          // border: 1px solid blue;
           width: 20%;
           text-align: center;
           margin-top: 5%;
@@ -75,7 +72,7 @@ function Splash() {
 
       <div className="read-button-container">
         <div className="read-button">
-            <h3>Read on</h3>
+          <h3>Read on</h3>
           <Link to="/readon"><img src={ArrowDown} /></Link>
         </div>
       </div>
