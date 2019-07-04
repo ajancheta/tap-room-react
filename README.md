@@ -9,7 +9,7 @@
 
 ## Description
 
-_This application is a build out of an in-class project that was previously written in Angular and is now using the React library._
+This application is a build out of an in-class project that was previously written in Angular and is now using the React library.
 
 ## Technologies Used
 
@@ -28,7 +28,7 @@ _This application is a build out of an in-class project that was previously writ
 
 ## Completed and in progress features
 
-- [x] Navigation buttons creating custom using Figma
+- [x] Navigation buttons creating custom icons using Figma
 - [x] Client side routing
 - [x] Component for list of beer on tap
 - [x] Component for admin to edit beer information
@@ -41,8 +41,10 @@ _This application is a build out of an in-class project that was previously writ
   * Open the repository in a preferred text editor such as Atom or Visual Studio Code.
 
   ### To run the application run the following commands
-  `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
-  `npm run start` in the project directory in Terminal. Go to http://localhost:8080/ in the browser of your choice. Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
+  * `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
+  * `npm run start` in the project directory in Terminal. 
+  * Go to http://localhost:8080/ in the browser of your choice. 
+  * Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
 
 ## Known Bugs
