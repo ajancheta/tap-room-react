@@ -11,11 +11,6 @@
 
 _This application is a build out of an in-class project that was previously written in Angular and is now using the React library._
 
-## Preview
-<p align="center">
-<img src="src/assets/img/preview.png" width="500" height="381">
-</p>
-
 ## Technologies Used
 
   * _React 16.8.6_
@@ -26,22 +21,28 @@ _This application is a build out of an in-class project that was previously writ
   * _Material UI 4.0.0-rc.0_
   * _JSX_
 
-  ##Setup / Installation Requirements
-  ### To open and view this project file
-  * Clone this GitHub repository "https://github.com/ajancheta/onnit-rebuild.git" to your desktop. 
-  * Open the repository in a preferred text editor such as Atom or Visual Studio Code.
+# Planning
+## Component and Route Tree
+<p align="center">
+<img src="src/assets/img/preview.png" width="500" height="230">
+</p>
 
-  ### To run the application run the following commands
-  `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
-  `npm run start` in the project directory in Terminal. Go to http://localhost:8080/ in the browser of your choice. _Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
-
-  ## Completed and in progress features
+## Completed and in progress features
 
 - [x] Navigation bar
 - [] Client side routing
 - [] Component for list of beer on tap
 - [] Component for admin to edit beer information
 - [] CSS / Material UI styling
+
+## Setup / Installation Requirements
+### To open and view this project file
+  * Clone this GitHub repository "https://github.com/ajancheta/onnit-rebuild.git" to your desktop. 
+  * Open the repository in a preferred text editor such as Atom or Visual Studio Code.
+
+  ### To run the application run the following commands
+  `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
+  `npm run start` in the project directory in Terminal. Go to http://localhost:8080/ in the browser of your choice. Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
 
 ## Known Bugs
