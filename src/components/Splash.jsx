@@ -73,7 +73,7 @@ function Splash() {
       <div className="read-button-container">
         <div className="read-button">
           <h3>Read on</h3>
-          <Link to="/readon"><img src={ArrowDown} /></Link>
+          <Link to="/about"><img src={ArrowDown} /></Link>
         </div>
       </div>
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import Background from '../assets/img/wood-bg.jpeg';
 
-function Admin() {
+function About() {
   return (
-    <div className="admin-background">
+    <div className="about-background">
       <style jsx>{`
-        .admin-background {
+        .about-background {
           background-image: url(${Background});
           position: absolute;
           width: 100vw;
@@ -21,4 +21,4 @@ function Admin() {
   )
 }
 
-export default Admin;
+export default About;
