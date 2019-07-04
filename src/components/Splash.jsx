@@ -1,15 +1,14 @@
 import React from 'react';
-import BackgroundPhoto from './../assets/img/channey-2.jpg';
+// import BackgroundPhoto from '../assets/img/channey2.jpg';
 
 function Splash() {
   return (
     <div>
       <style jsx>{`
         div {
-          background-image: url(${BackgroundPhoto});
+          background-image: src={require('../assets/img/channey2.jpg');
         }
       `}</style>
-
     </div>
 
   );

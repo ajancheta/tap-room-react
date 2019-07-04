@@ -1,9 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { Switch, Route } from 'react-router-dom';
-import { Splash } from './Splash';
-// import { Admin } from './Admin';
+import Splash from './Splash';
 import Error404 from './Error404';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/' component={Splash} />
-        {/* <Route path='/admin' component={Admin} /> */}
         <Route component={Error404} />
       </Switch>
     </div>
