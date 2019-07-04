@@ -37,7 +37,7 @@ _This application is a build out of an in-class project that was previously writ
 
 ## Setup / Installation Requirements
 ### To open and view this project file
-  * Clone this GitHub repository "https://github.com/ajancheta/onnit-rebuild.git" to your desktop. 
+  * Clone this GitHub repository "https://github.com/ajancheta/tap-room-react.git" to your desktop. 
   * Open the repository in a preferred text editor such as Atom or Visual Studio Code.
 
   ### To run the application run the following commands
