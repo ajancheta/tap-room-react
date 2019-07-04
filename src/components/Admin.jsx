@@ -1,7 +1,7 @@
 import React from 'react';
 import Background from '../assets/img/wood-bg.jpeg';
 
-function BeerList() {
+function Admin() {
   return (
     <div className="beerlist-background">
       <style jsx>{`
@@ -21,4 +21,4 @@ function BeerList() {
   )
 }
 
-export default BeerList;
+export default Admin;
