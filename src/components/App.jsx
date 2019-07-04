@@ -7,7 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route exact path='/' component={Splash} />
         <Route component={Error404} />
