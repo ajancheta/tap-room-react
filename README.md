@@ -22,8 +22,8 @@ _This application is a build out of an in-class project that was previously writ
   * _JSX_
 
 ## Component and Route Tree
-<p align="center">
-<img src="src/assets/img/preview.png" width="350" height="230">
+<p>
+<img src="src/assets/img/diagram.png" width="350" height="230">
 </p>
 
 ## Completed and in progress features
@@ -34,7 +34,6 @@ _This application is a build out of an in-class project that was previously writ
 - [x] Component for admin to edit beer information
 - [x] CSS / Material UI styling
 - [ ] Taking in admin information from a form and saving to local database
-- [ ] 
 
 ## Setup / Installation Requirements
 ### To open and view this project file
