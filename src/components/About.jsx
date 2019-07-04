@@ -18,7 +18,7 @@ function About() {
       `}</style>
 
     </div>
-  )
+  );
 }
 
 export default About;

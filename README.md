@@ -21,20 +21,20 @@ _This application is a build out of an in-class project that was previously writ
   * _Material UI 4.0.0-rc.0_
   * _JSX_
 
-## Planning
-
 ## Component and Route Tree
 <p align="center">
-<img src="src/assets/img/preview.png" width="500" height="230">
+<img src="src/assets/img/preview.png" width="350" height="230">
 </p>
 
 ## Completed and in progress features
 
-- [x] Navigation bar
-- [] Client side routing
-- [] Component for list of beer on tap
-- [] Component for admin to edit beer information
-- [] CSS / Material UI styling
+- [x] Navigation buttons creating custom using Figma
+- [x] Client side routing
+- [x] Component for list of beer on tap
+- [x] Component for admin to edit beer information
+- [x] CSS / Material UI styling
+- [ ] Taking in admin information from a form and saving to local database
+- [ ] 
 
 ## Setup / Installation Requirements
 ### To open and view this project file

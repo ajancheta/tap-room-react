@@ -17,8 +17,9 @@ function Admin() {
       
       `}</style>
 
+    
     </div>
-  )
+  );
 }
 
 export default Admin;
