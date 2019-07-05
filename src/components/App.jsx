@@ -1,6 +1,6 @@
 import React from 'react';
 import Splash from './Splash';
-import BeerList from './BeerList';
+import Beer from './Beer';
 import Admin from './Admin';
 import About from './About';
 import Error404 from './Error404';
@@ -11,7 +11,7 @@ function App() {
     <div>
       <Switch>
         <Route exact path='/' component={Splash} />
-        <Route path='/beerlist' component={BeerList} />
+        <Route path='/beer' component={Beer} />
         <Route path='/admin' component={Admin} />     
         <Route path='/about' component={About} />   <Route component={Error404} />
       </Switch>

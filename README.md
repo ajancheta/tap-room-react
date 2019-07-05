@@ -43,7 +43,7 @@ This application is a build out of an in-class project that was previously writt
   ### To run the application run the following commands
   * `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
   * `npm run start` in the project directory in Terminal. 
-  * Go to http://localhost:8080/ in the browser of your choice. 
+  * Go to http://localhost:8080/ in the browser, preferably Google Chrome.
   * Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
 

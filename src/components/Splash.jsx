@@ -20,6 +20,17 @@ function Splash() {
           background-repeat: no-repeat;
         }
 
+        h1 {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          color: #ECE5D6;
+          text-align: center;
+          font-size: 3em;
+          letter-spacing: 5px;
+          margin-top: 7%;
+        }
+
         h3 {
           font-family: 'Montserrat', sans-serif;
           text-transform: uppercase;
@@ -28,7 +39,7 @@ function Splash() {
         }
 
         .splash-button-container {
-          margin-top: 15%;
+          margin-top: 5%;
           display: flex;
           justify-content: center;
         }
@@ -56,10 +67,12 @@ function Splash() {
         }
       `}</style>
 
+      <h1>The Forager's Ale House</h1>
+
       <div className="splash-button-container">
         <div className="splash-button">
           <div>
-            <Link to="/beerlist"><img src={ArrowLeft} /></Link>
+            <Link to="/beer"><img src={ArrowLeft} /></Link>
             <h3>Beer List</h3>
           </div>
 
