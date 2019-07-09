@@ -50,7 +50,8 @@ function Beer() {
   return (
     <div>
       {availableBeer.map((beerlist, index) =>
-        <BeerList name={beerlist.name}
+        <BeerList 
+          name={beerlist.name}
           style={beerlist.style}
           description={beerlist.description}
           ABV={beerlist.ABV}

@@ -7,15 +7,15 @@ function BeerList(props) {
     <div className="beerlist-background">
       <style jsx>{`
 
-        .beerlist-background {
-          background-image: url(${Background});
-          position: absolute;
-          width: 100vw;
-          height: 100vh;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
+        // .beerlist-background {
+        //   background-image: url(${Background});
+        //   position: absolute;
+        //   width: 100vw;
+        //   height: 100vh;
+        //   background-size: cover;
+        //   background-position: center;
+        //   background-repeat: no-repeat;
+        // }
         
         h1 {
           font-family: 'Montserrat', sans-serif;
@@ -27,18 +27,20 @@ function BeerList(props) {
         }
 
         .beer-details {
+          border: 1px solid red;
           font-family: 'Montserrat', sans-serif;
           color: #ECE5D6;
+          padding: 10px;
         }
       
       `}</style>
-
-      <h1>Available Brew</h1>
+      
       
       <div className="beer-details">
         <h2>{props.name} | {props.style}</h2>
         <p>{props.description}</p>
-        <p>({props.ABV}%)</p>
+        <p>{props.ABV}%</p>
+        <hr />
       </div>
     
     </div>
