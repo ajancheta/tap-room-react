@@ -34,7 +34,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexFlow: 'row',
     justifyContent: 'spaceBetween',
-    alignItems: 'center'
+    paddingRight: '3px',
+    alignItems: 'center',
   }
 }));
 
@@ -56,6 +57,9 @@ function Nav() {
               </div>
               <div className={classes.spacing}>
                 <Link to="/admin" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Admin</span></Link>
+              </div>
+              <div className={classes.spacing}>
+                <Link to="/admin/edit" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Edit</span></Link>
               </div>
             </div>
 
