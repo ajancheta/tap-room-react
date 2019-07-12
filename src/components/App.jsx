@@ -1,6 +1,7 @@
 import React from 'react';
 import Splash from './Splash';
 import Beer from './Beer';
+import BeerList from './BeerList';
 import NewBeerForm from './NewBeerForm';
 import About from './About';
 import Error404 from './Error404';
@@ -69,8 +70,14 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route exact path='/' component={Splash} />
-          <Route path='/beer' component={Beer} />
-          <Route path='/newform' component={NewBeerForm} />
+          <Route path='/beer' render={() => <BeerList beerList={this.state.onTap}/>} component={Beer} />
+          <Route
+            exact
+            path="/admin"
+            render={() => (
+              <NewBeerForm onNewBeerAddition={this.handleAddingNewBeer} />
+            )}
+          />
           <Route path='/about' component={About} />   <Route component={Error404} />
         </Switch>
       </div>

@@ -11,17 +11,13 @@ function NewBeerForm(props) {
 
   function handleNewBeerSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-  console.log(_style.value);
-  console.log(_description.value);
-  console.log(_ABV.value);
-    // props.onNewBeerAddition({
-    //   name: _name.value,
-    //   style: _style.value,
-    //   description: _description.value,
-    //   ABV: _ABV.value,
-    //   id: v4()
-    // });
+    props.onNewBeerAddition({
+      name: _name.value,
+      style: _style.value,
+      description: _description.value,
+      ABV: _ABV.value,
+      id: v4()
+    });
 
     _name.value = '';
     _style.value = '';
@@ -69,11 +65,15 @@ function NewBeerForm(props) {
             id='ABV'
             placeholder='ABV %'
             ref={(input) => {_ABV = input;}}/>
-          <button type='submit'>Add to beer list</button>
+          <button type='submit'>Add</button>
         </form>
       </div>
     </div>
   );
 }
+
+NewBeerForm.propTypes = {
+  onNewBeerAddition: PropTypes.func
+};
 
 export default NewBeerForm;
