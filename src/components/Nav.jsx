@@ -11,6 +11,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: 'none',
     fix: 'absolute',
     position: 'fixed',
+    zIndex:'1',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -49,6 +50,9 @@ function Nav() {
             <div className={classes.spacing}>
               <div className={classes.spacing}>
                 <Link to="/" style={{ textDecoration: 'none' }}><span className={classes.clicked}>Home</span></Link>
+              </div>
+              <div className={classes.spacing}>
+                <Link to="/beer" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Brews</span></Link>
               </div>
               <div className={classes.spacing}>
                 <Link to="/admin" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Admin</span></Link>
