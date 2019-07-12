@@ -2,10 +2,12 @@ import React from 'react';
 import Background from '../assets/img/wood-bg.jpeg';
 import PropTypes from 'prop-types';
 import Beer from './Beer';
+import Nav from './Nav';
 
 function BeerList(props) {
   return (
     <div className="beerlist-background">
+      <Nav />
       <style jsx>{`
 
         .beerlist-background {
@@ -34,8 +36,7 @@ function BeerList(props) {
         }
       
       `}</style>
-      
-      
+
       <div className="beer-details">
         {props.beerList.map(beer => (
           <Beer

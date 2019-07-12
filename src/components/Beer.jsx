@@ -9,6 +9,8 @@ function Beer(props) {
 
       }
       `}</style>
+
+      
       <div className="beer-details">
         <h2>{props.name} | {props.style}</h2>
         <p>{props.description}</p>
