@@ -9,7 +9,6 @@ function BeerList(props) {
     <div className="beerlist-background">
       <Nav />
       <style jsx>{`
-
         .beerlist-background {
           background-image: url(${Background});
           position: absolute;
@@ -31,21 +30,17 @@ function BeerList(props) {
         }
 
         .beer-details-container {
-          font-family: 'Montserrat', sans-serif;
-          color: #ECE5D6;
           display: grid;
           grid-template-columns: auto auto auto auto;
-          margin: 10%;
-          background-color: #213458;
-          opacity: 0.95;
         }
-
       `}</style>
 
       <h1 className="title">Brews on Tap</h1>
       <div className="beer-details-container">
         {props.beerList.map(beer => (
           <Beer
+            onClickDelete={props.onClickDelete}
+            currentRouterPath={props.currentRouterPath}
             name={beer.name}
             style={beer.style}
             description={beer.description}
@@ -59,7 +54,9 @@ function BeerList(props) {
 }
 
 BeerList.propTypes = {
-  beerList: PropTypes.array
+  beerList: PropTypes.array,
+  currentRouterPath: PropTypes.string,
+  onClickDelete: PropTypes.func
 };
 
 export default BeerList;
