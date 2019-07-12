@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
@@ -12,7 +11,6 @@ const useStyles = makeStyles(theme => ({
     boxShadow: 'none',
     fix: 'absolute',
     position: 'fixed',
-    opacity: '0.95',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -20,14 +18,14 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
-  clicky: {
+  clicked: {
     color: 'white',
     textDecoration: 'none',
     '&:hover': {
       color: 'rgba(255,255,255,0.7)',
     },
     '&:active': {
-      color: 'rgba(255,95,193,1)',
+      color: '#ECE5D6',
     },
   },
   spacing:{
@@ -50,10 +48,10 @@ function Nav() {
           <Typography variant="h6" className={classes.title}>
             <div className={classes.spacing}>
               <div className={classes.spacing}>
-                <Link to="/" style={{ textDecoration: 'none' }}><span className={classes.clicky}>Home</span></Link>
+                <Link to="/" style={{ textDecoration: 'none' }}><span className={classes.clicked}>Home</span></Link>
               </div>
               <div className={classes.spacing}>
-                <Link to="/admin" style={{ textDecoration: 'none'}}><span className={classes.clicky}>Admin</span></Link>
+                <Link to="/admin" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Admin</span></Link>
               </div>
             </div>
 
