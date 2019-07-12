@@ -14,30 +14,36 @@ function BeerList(props) {
           background-image: url(${Background});
           position: absolute;
           width: 100vw;
-          // height: 100vh;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
         
-        h1 {
+        .title {
           font-family: 'Montserrat', sans-serif;
           text-transform: uppercase;
           font-weight: 800;
           color: #ECE5D6;
           text-align: center;
+          font-size: 3em;
           letter-spacing: 5px;
+          margin-top: 7%;
         }
 
-        .beer-details {
+        .beer-details-container {
           font-family: 'Montserrat', sans-serif;
           color: #ECE5D6;
-          padding: 10px;
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          margin: 10%;
+          background-color: #213458;
+          opacity: 0.95;
         }
-      
+
       `}</style>
 
-      <div className="beer-details">
+      <h1 className="title">Brews on Tap</h1>
+      <div className="beer-details-container">
         {props.beerList.map(beer => (
           <Beer
             name={beer.name}

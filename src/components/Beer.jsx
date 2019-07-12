@@ -5,17 +5,23 @@ function Beer(props) {
   return (
     <div>
       <style jsx>{`
-      .beer-details {
-
+      .beer-container {
+        padding: 10px;
       }
-      `}</style>
 
+      h3 {
+        margin-top: -10px;
+      }
+
+      `}</style>
       
-      <div className="beer-details">
-        <h2>{props.name} | {props.style}</h2>
-        <p>{props.description}</p>
-        <p>{props.ABV}%</p>
-        <hr/>
+      <div className="beer-container">
+        <div className="beer-details">
+          <h2>{props.name}</h2>
+          <h3>{props.style}</h3>
+          <p>{props.description}</p>
+          <p>{props.ABV}%</p>
+        </div>
       </div>
     </div>
   );
