@@ -1,6 +1,5 @@
 import React from 'react';
 import Splash from './Splash';
-import Beer from './Beer';
 import BeerList from './BeerList';
 import NewBeerForm from './NewBeerForm';
 import About from './About';
@@ -70,7 +69,10 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route exact path='/' component={Splash} />
-          <Route path='/beer' render={() => <BeerList beerList={this.state.onTap}/>} component={Beer} />
+          <Route
+            path="/beer"
+            render={() => <BeerList beerList={this.state.onTap} />}
+          />
           <Route
             exact
             path="/admin"

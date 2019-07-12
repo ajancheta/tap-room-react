@@ -1,21 +1,22 @@
 import React from 'react';
 import Background from '../assets/img/wood-bg.jpeg';
 import PropTypes from 'prop-types';
+import Beer from './Beer';
 
 function BeerList(props) {
   return (
     <div className="beerlist-background">
       <style jsx>{`
 
-        // .beerlist-background {
-        //   background-image: url(${Background});
-        //   position: absolute;
-        //   width: 100vw;
-        //   height: 100vh;
-        //   background-size: cover;
-        //   background-position: center;
-        //   background-repeat: no-repeat;
-        // }
+        .beerlist-background {
+          background-image: url(${Background});
+          position: absolute;
+          width: 100vw;
+          // height: 100vh;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
         
         h1 {
           font-family: 'Montserrat', sans-serif;
@@ -36,21 +37,22 @@ function BeerList(props) {
       
       
       <div className="beer-details">
-        <h2>{props.name} | {props.style}</h2>
-        <p>{props.description}</p>
-        <p>{props.ABV}%</p>
-        <hr />
+        {props.beerList.map(beer => (
+          <Beer
+            name={beer.name}
+            style={beer.style}
+            description={beer.description}
+            ABV={beer.ABV}
+            key={beer.id}
+          />
+        ))}
       </div>
-    
     </div>
   );
 }
 
 BeerList.propTypes = {
-  name: PropTypes.string.isRequired,
-  style: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  ABV: PropTypes.string.isRequired,
+  beerList: PropTypes.array
 };
 
 export default BeerList;
