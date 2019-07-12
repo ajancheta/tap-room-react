@@ -51,11 +51,17 @@ function Beer(props) {
       <div className="beer-container">
         <div className="beer-details">
           <h2>{props.name}</h2>
-          <button onClick={() => {props.onClickDelete(props.id);}}>Delete</button>
+          <h3>{props.style}</h3>
+          <p>{props.description}</p>
+          <p>{props.ABV}%</p>
+          <button onClick={() => {
+            props.onClickDelete(props.id);
+          }}>Delete</button>
         </div>
       </div>
     </div>
   );
+
   if (props.currentRouterPath === '/admin/edit') {
     return <div>{editBeerList}</div>;
   } else {

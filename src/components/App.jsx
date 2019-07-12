@@ -2,6 +2,7 @@ import React from 'react';
 import Splash from './Splash';
 import BeerList from './BeerList';
 import NewBeerForm from './NewBeerForm';
+import DeleteBeer from './DeleteBeer';
 import About from './About';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
@@ -56,6 +57,15 @@ class App extends React.Component {
       ]
     };
     this.handleAddingNewBeer = this.handleAddingNewBeer.bind(this);
+    this.handleDeleteBeer = this.handleDeleteBeer.bind(this);
+  }
+
+  findId(id) {
+    for (var i = 0; i < this.state.onTap.length; i ++) {
+      if (id == this.state.onTap[i].id) {
+        return i;
+      }
+    }
   }
 
   handleAddingNewBeer(newBeer) {
@@ -64,6 +74,13 @@ class App extends React.Component {
     this.setState({onTap: newOnTap});
   }
 
+  handleDeleteBeer(id) {
+    var newBeerList = this.state.onTap.slice();
+    newBeerList.splice(this.findId(id), 1);
+    this.setState({onTap: newBeerList});
+  }
+
+  
   render() {
     return (
       <div>
@@ -80,7 +97,16 @@ class App extends React.Component {
               <NewBeerForm onNewBeerAddition={this.handleAddingNewBeer} />
             )}
           />
-          <Route path='/about' component={About} />   <Route component={Error404} />
+          <Route path="/admin/edit" render={props => (
+            <DeleteBeer
+              beerList={this.state.onTap}
+              currentRouterPath={props.location.pathname}
+              onClickDelete={this.handleDeleteBeer}
+            />
+          )}
+          />
+          <Route path='/about' component={About} />
+          <Route component={Error404} />
         </Switch>
       </div>
     );
