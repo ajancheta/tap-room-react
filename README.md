@@ -1,6 +1,6 @@
 # Tap Room - React Build
 
-#### _React Week 1 and 2, Independent Project, 7.4.19_
+#### _React Week 1 and 2, Independent Project, 7.4.19 & 7.12.19_
 
 #### By _**Ashley Jessica Ancheta**_
 
@@ -28,12 +28,13 @@ This application is a build out of an in-class project that was previously writt
 
 ## Completed and in progress features
 
-- [x] Navigation buttons creating custom icons using Figma
+- [x] Navigation buttons created with custom icons using Figma
 - [x] Client side routing
 - [x] Component for list of beer on tap
 - [x] Component for admin to edit beer information
 - [x] CSS / Material UI styling
-- [ ] Taking in admin information from a form and saving to local database
+- [x] Taking in admin information from a form and saving to local database 
+- [x] Allow user to delete brews
 
 ## Setup / Installation Requirements
 ### To open and view this project file
@@ -51,6 +52,6 @@ This application is a build out of an in-class project that was previously writt
 There are no known bugs.
 
 ## Support and contact details
-This application is best viewed on a full screen. Should any problems occur, discover other bugs, or experience issues with viewing, please contact me at ashleyjancheta@gmail.com
+Should any problems occur, discover other bugs, or experience issues with viewing, please contact me at ashleyjancheta@gmail.com
 
 Copyright (c) 2019 **_Ashley J. Ancheta_**
