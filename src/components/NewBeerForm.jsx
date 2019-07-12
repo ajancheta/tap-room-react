@@ -37,6 +37,47 @@ function NewBeerForm(props) {
           background-position: center;
           background-repeat: no-repeat;
         }
+
+        input {
+          padding: 20px;
+          width: 50%;
+          margin: 2px;
+          font-size: 14px;
+        }
+
+        textarea {
+          padding: 20px;
+          width: 50%;
+          margin: 2px;
+          font-size: 14px;
+        }
+
+        .title {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          color: #ECE5D6;
+          text-align: center;
+          font-size: 3em;
+          letter-spacing: 5px;
+          margin-top: 7%;
+        }
+
+        button{
+          padding: 20px;
+          color: white;
+          background-color: #213458;
+          width: 30%;
+          border: 1px solid #213458;
+          border-radius: 10px;
+          margin-top: 2%;
+          font-size: 16px;
+        }
+
+        .beer-form {
+          margin-top: 5%;
+          text-align: center;
+        }
       
       `}</style>
       <div className="title">
@@ -64,8 +105,8 @@ function NewBeerForm(props) {
             type='text'
             id='ABV'
             placeholder='ABV %'
-            ref={(input) => {_ABV = input;}}/>
-          <button type='submit'>Add</button>
+            ref={(input) => {_ABV = input;}}/><br />
+          <button type='submit'>Add Brew</button>
         </form>
       </div>
     </div>
