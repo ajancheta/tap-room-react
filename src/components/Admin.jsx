@@ -16,7 +16,7 @@ function Admin() {
         }
       
       `}</style>
-
+      <div>Admin</div>
     
     </div>
   );
