@@ -73,7 +73,7 @@ function Splash() {
         <div className="splash-button">
           <div>
             <Link to="/beer"><img src={ArrowLeft} /></Link>
-            <h3>Beer List</h3>
+            <h3>Beer On Tap</h3>
           </div>
 
           <div>
