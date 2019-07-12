@@ -27,7 +27,6 @@ function BeerList(props) {
         }
 
         .beer-details {
-          border: 1px solid red;
           font-family: 'Montserrat', sans-serif;
           color: #ECE5D6;
           padding: 10px;
