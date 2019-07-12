@@ -2,6 +2,7 @@ import React from 'react';
 import Background from '../assets/img/wood-bg.jpeg';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import Nav from './Nav';
 
 function NewBeerForm(props) {
   let _name = null;
@@ -80,6 +81,8 @@ function NewBeerForm(props) {
         }
       
       `}</style>
+
+      <Nav />
       <div className="title">
         New Beer Form
       </div>
