@@ -10,7 +10,7 @@ function Beer(props) {
         font-family: 'Montserrat', sans-serif;
         color: #ECE5D6;
         margin: 10%;
-        background-color: #213458;
+        background-color: #c24a19;
         opacity: 0.95;
       }
 
@@ -39,7 +39,7 @@ function Beer(props) {
         font-family: 'Montserrat', sans-serif;
         color: #ECE5D6;
         margin: 10%;
-        background-color: #213458;
+        background-color: #c24a19;
         opacity: 0.95;
       }
 

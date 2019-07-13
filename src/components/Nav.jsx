@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: '#213458',
+    backgroundColor: '#512C1D',
     boxShadow: 'none',
     fix: 'absolute',
     position: 'fixed',

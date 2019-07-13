@@ -67,9 +67,9 @@ function NewBeerForm(props) {
         button{
           padding: 20px;
           color: white;
-          background-color: #213458;
+          background-color: #c24a19;
           width: 30%;
-          border: 1px solid #213458;
+          border: 1px solid #c24a19;
           border-radius: 10px;
           margin-top: 2%;
           font-size: 16px;
