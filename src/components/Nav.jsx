@@ -20,13 +20,13 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   clicked: {
-    color: 'white',
+    color: '#ECE5D6',
     textDecoration: 'none',
     '&:hover': {
       color: 'rgba(255,255,255,0.7)',
     },
     '&:active': {
-      color: '#ECE5D6',
+      color: '#c24a19',
     },
   },
   spacing:{
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexFlow: 'row',
     justifyContent: 'spaceBetween',
-    paddingRight: '3px',
+    paddingRight: '5%',
     alignItems: 'center',
   }
 }));
@@ -54,6 +54,9 @@ function Nav() {
               </div>
               <div className={classes.spacing}>
                 <Link to="/beer" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Brews</span></Link>
+              </div>
+              <div className={classes.spacing}>
+                <Link to="/about" style={{ textDecoration: 'none'}}><span className={classes.clicked}>About</span></Link>
               </div>
               <div className={classes.spacing}>
                 <Link to="/admin" style={{ textDecoration: 'none'}}><span className={classes.clicked}>Admin</span></Link>
