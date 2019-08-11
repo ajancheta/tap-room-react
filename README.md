@@ -23,7 +23,7 @@ This application is a build out of an in-class project that was previously writt
 
 ## Component and Route Tree
 <p>
-<img src="src/assets/img/diagram.png" width="350" height="230">
+<img src="src/assets/img/diagram.png">
 </p>
 
 ## Preview
