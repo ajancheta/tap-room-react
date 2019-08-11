@@ -68,30 +68,25 @@ function Splash() {
       `}</style>
 
       <h1>The Forager's Ale House</h1>
-
       <div className="splash-button-container">
         <div className="splash-button">
           <div>
             <Link to="/beer"><img src={ArrowLeft} /></Link>
             <h3>Beer On Tap</h3>
           </div>
-
           <div>
             <Link to="/admin"><img src={ArrowRight} /></Link>
             <h3>Admin</h3>
           </div>
         </div>
       </div>
-
       <div className="read-button-container">
         <div className="read-button">
           <h3>Read on</h3>
           <Link to="/about"><img src={ArrowDown} /></Link>
         </div>
       </div>
-
     </div>
-
   );
 }
 
