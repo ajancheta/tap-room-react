@@ -29,8 +29,8 @@ It allows users to add new brews from a form, lifting state to add / edit / dele
 </p>
 
 ## Preview
+<em>Background photo taken by Channey Tang-Ho.</em>
 <img src="src/assets/img/preview1.png" width="800" height="450">
-<br><em>Background photo taken by Channey Tang-Ho.</em><br>
 <img src="src/assets/img/preview2.png" width="800" height="450">
 <img src="src/assets/img/preview3.png" width="800" height="450">
 
