@@ -26,6 +26,11 @@ This application is a build out of an in-class project that was previously writt
 <img src="src/assets/img/diagram.png" width="350" height="230">
 </p>
 
+## Preview
+<img src="src/assets/img/preview1.png" width="800" height="450">
+<img src="src/assets/img/preview2.png" width="800" height="450">
+<img src="src/assets/img/preview3.png" width="800" height="450">
+
 ## Completed and in progress features
 
 - [x] Navigation buttons created with custom icons using Figma
