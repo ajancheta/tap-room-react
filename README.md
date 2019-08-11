@@ -11,6 +11,8 @@
 
 This application is a build out of an in-class project that was previously written in Angular and is now using the React library.
 
+It allows users to add new brews from a form, lifting state to add / edit / delete current brews on tap. 
+
 ## Technologies Used
 
   * _React 16.8.6_
@@ -28,6 +30,7 @@ This application is a build out of an in-class project that was previously writt
 
 ## Preview
 <img src="src/assets/img/preview1.png" width="800" height="450">
+<br><em>Background photo taken by Channey Tang-Ho.</em><br>
 <img src="src/assets/img/preview2.png" width="800" height="450">
 <img src="src/assets/img/preview3.png" width="800" height="450">
 
@@ -37,7 +40,7 @@ This application is a build out of an in-class project that was previously writt
 - [x] Client side routing
 - [x] Component for list of beer on tap
 - [x] Component for admin to edit beer information
-- [x] CSS / Material UI styling
+- [x] Custom CSS and Material UI styling
 - [x] Taking in admin information from a form and saving to local database 
 - [x] Allow user to delete brews
 
@@ -57,6 +60,6 @@ This application is a build out of an in-class project that was previously writt
 There are no known bugs.
 
 ## Support and contact details
-Should any problems occur, discover other bugs, or experience issues with viewing, please contact me at ashleyjancheta@gmail.com
+Should any problems occur, discover other bugs, or experience issues with viewing, please contact me at ashleyjancheta@gmail.com.
 
 Copyright (c) 2019 **_Ashley J. Ancheta_**
